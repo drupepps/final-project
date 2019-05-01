@@ -1,0 +1,128 @@
+<!--
+double check other html page (before) to not have 2x head + body
+fix link to before.html here
+create a script file, like: slides.js -> scripts folder -> add the <script>... tag right before closing body tag 
+fix pathway to images here (and for before.html)
+for gh and current website, add target attr. so opens in new tab <a href="..." target="_blank">
+
+
+* load in jQuery, look again at Tumbly 
+
+for the JSON. 
+e.g. var x = [1, "cat"]
+var myOjb = {"name":"joe", "num":"1"}
+1. figure out what data to put into it? pic was clicked...currently loaded? 
+{"currrentPic":"img1.jpg"}
+
+2. create the JSON...
+first declare...how do we programatically "grab" which pic is displayed? 
+document.getElemntById = 
+...psuedo code: var x = slides[slideIndex-1];
+  $(x "img").attr("src") 
+
+mabye make a button, then its easier, cuz you attatch it to an event to "grab" current pic
+
+3. "print" it. 
+console.log(json obj is called)
+
+$('#myDiv').html = json obj is called...
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+  <div id="body">
+  </div>
+  
+  <div id="header">
+  <p>Caravan Imports Oriental Rugs</p>
+  </div>
+   
+   <div id="menu">
+  <p>Home Services Rugs Contact </p>
+  </div>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/img1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/img2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/img3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div id="console-box"> 
+  </div>
+  
+<div id="img1-box">
+	<p>1</p>
+</div>
+
+<div id="img2-box">
+	<p>2</p>
+</div>
+
+<div id="img3-box">
+	<p>3</p>
+</div>
+
+<div id="question">
+	<p>Which picture is your favorite?</p>
+</div>
+
+<div id="before">
+  <a href="pages/before.html">
+    <p>CLICK TO SEE BEFORE</p>
+</div>
+
+  
+ <div id="table">
+      <table style="width:100%">
+  <tr>
+    <td><a href="https://github.com/drupepps" target="_blank">GitHub Repo</a></td>
+        </tr>
+  <tr>
+    <td><a href="https://caravanhsv.com" target="_blank">Current Website</a></td>
+        </tr>
+      </table>
+    </div>
+  
+  <script src="js/slides.js"></script>
+</body>
+
+</html>

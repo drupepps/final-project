@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Crimson+Text|Montserrat');
+
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #FFF;
+}
+
+#header {
+  color: #E53935;
+  font-family: Crafty Girls;
+  text-align: center;
+  position: relative;
+  top: 0px; left: 0px;
+  z-index: 1;
+  font-size: 30px;
+ 
+}
+
+#menu {
+  height: 100px;
+  width: 100%;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 0px;
+  word-spacing: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#caption {
+  height: 100px;
+  width: 100%;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+ #back {
+  height: 50px;
+  width: 80px;
+  text-align: center;
+  background-color: #000;
+  color: #FAFAFA;
+  font-family: Montserrat;
+  position: fixed;
+  bottom: 5%;
+  right: 0px; 
+}
