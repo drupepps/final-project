@@ -1,34 +1,3 @@
-<!--
-double check other html page (before) to not have 2x head + body
-fix link to before.html here
-create a script file, like: slides.js -> scripts folder -> add the <script>... tag right before closing body tag 
-fix pathway to images here (and for before.html)
-for gh and current website, add target attr. so opens in new tab <a href="..." target="_blank">
-
-
-* load in jQuery, look again at Tumbly 
-
-for the JSON. 
-e.g. var x = [1, "cat"]
-var myOjb = {"name":"joe", "num":"1"}
-1. figure out what data to put into it? pic was clicked...currently loaded? 
-{"currrentPic":"img1.jpg"}
-
-2. create the JSON...
-first declare...how do we programatically "grab" which pic is displayed? 
-document.getElemntById = 
-...psuedo code: var x = slides[slideIndex-1];
-  $(x "img").attr("src") 
-
-mabye make a button, then its easier, cuz you attatch it to an event to "grab" current pic
-
-3. "print" it. 
-console.log(json obj is called)
-
-$('#myDiv').html = json obj is called...
-
-
--->
 
 <!DOCTYPE html>
 <html lang="en" >
@@ -114,7 +83,7 @@ $('#myDiv').html = json obj is called...
  <div id="table">
       <table style="width:100%">
   <tr>
-    <td><a href="https://github.com/drupepps" target="_blank">GitHub Repo</a></td>
+    <td><a href="https://github.com/drupepps/final-project" target="_blank">GitHub Repo</a></td>
         </tr>
   <tr>
     <td><a href="https://caravanhsv.com" target="_blank">Current Website</a></td>
